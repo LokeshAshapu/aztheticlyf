@@ -1,0 +1,11 @@
+import puppeteer from "/d/aztheticlyf/node_modules/puppeteer-core/index.js";
+const b = await puppeteer.launch({ executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe", headless: "new", args: ["--hide-scrollbars"] });
+const p = await b.newPage();
+await p.setViewport({ width: 1440, height: 950, deviceScaleFactor: 1 });
+await p.goto("http://localhost:3210/", { waitUntil: "domcontentloaded", timeout: 60000 });
+await new Promise(r=>setTimeout(r,3000));
+const h = await p.evaluate(()=>document.documentElement.scrollHeight);
+console.log("scrollHeight", h);
+const sections = await p.evaluate(()=>Array.from(document.querySelectorAll("section")).map(s=>s.id+"="+s.offsetHeight));
+console.log(sections);
+await b.close();
