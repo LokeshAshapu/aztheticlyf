@@ -62,7 +62,8 @@ export function Wholesale() {
               <div className="relative">
                 <Plate
                   variant="stationery"
-                  alt="Editorial artwork of a stack of notebooks — the wholesale range"
+                  alt="Korean stationery and accessories arranged in a gift hamper"
+                  src="/images/instagram/stationery-hamper.jpg"
                   label="Wholesale range"
                   className="aspect-[3/4] w-full border border-ink/10"
                 />

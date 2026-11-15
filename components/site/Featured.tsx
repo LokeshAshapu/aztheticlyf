@@ -49,7 +49,8 @@ export function Featured() {
                   >
                     <Plate
                       variant={feature.variant}
-                      alt={`${feature.title} — editorial artwork`}
+                      alt={`${feature.title} — photo from Aztheticlyf on Instagram`}
+                      src={feature.image}
                       className={`${index === 0 ? "aspect-[5/4]" : "aspect-[4/3]"} w-full`}
                     />                      <span className="absolute top-4 right-4 rounded-full bg-plum/70 px-3 py-1 text-[0.58rem] tracking-[0.16em] text-cream/80 uppercase backdrop-blur">
                         {feature.kicker}

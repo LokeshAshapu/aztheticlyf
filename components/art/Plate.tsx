@@ -9,12 +9,10 @@ type Palette = {
 };
 
 /**
- * Editorial artwork plates.
+ * Editorial artwork plates with optional local photography.
  *
  * These are original vector still-life compositions in the brand palette, not
- * stock photography — so nothing can 404 and the visual language stays consistent.
- * When the studio's own photographs are ready, pass `src` to <Plate /> and the
- * artwork is replaced by the photo with the same framing and hover behaviour.
+ * stock photography. They remain as a fallback when a photo is not provided.
  */
 
 const palettes: Record<PlateVariant, Palette> = {

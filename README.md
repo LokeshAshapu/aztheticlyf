@@ -50,12 +50,13 @@ components/
   ui/*              Reveal, Magnetic, Cta, SectionLabel, Stamp
 ```
 
-## Adding real photographs
+## Instagram photography
 
-Every visual is a `Plate` component. Drop the studio's photography into `public/photos/` and
-pass `src="/photos/hamper-01.jpg"` to the relevant `Plate` — the framing, hover zoom and
-accessibility attributes stay the same. When at least one real photo is provided, replace
-the matching plate in `content/site.ts` via a small `image` field or directly on the component.
+Selected photos from the public `@aztheticlyf` Instagram account are stored locally in
+`public/images/instagram/`, so the site does not depend on expiring Instagram CDN URLs.
+Collection, featured and gallery image paths and post links are maintained in `content/site.ts`.
+Other `Plate` components can use the same local `src` prop while keeping their existing framing
+and hover behavior.
 
 ## Marketing configuration
 

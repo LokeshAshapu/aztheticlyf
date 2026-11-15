@@ -37,13 +37,15 @@ export function About() {
               <div className="relative">
                 <Plate
                   variant="drape"
-                  alt="Editorial artwork of draped fabric in sand and blush tones"
+                  alt="Saree and jewellery from an Aztheticlyf Instagram post"
+                  src="/images/instagram/saree-jewellery.jpg"
                   className="aspect-[4/5] w-full rounded-t-[10rem] border border-ink/10"
                 />
                 <div className="absolute -right-3 bottom-6 w-[42%] rotate-[4deg] border-[6px] border-cream bg-cream shadow-[0_20px_45px_-25px_rgba(27,17,32,0.55)]">
                   <Plate
                     variant="bloom"
-                    alt="Editorial artwork of a soft petal bloom"
+                    alt="Body-care product featured in an Instagram reel"
+                    src="/images/instagram/bath-bubbles.jpg"
                     className="aspect-square w-full"
                   />
                 </div>

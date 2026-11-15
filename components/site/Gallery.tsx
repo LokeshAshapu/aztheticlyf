@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Cta } from "@/components/ui/Cta";
 
-const spans = ["aspect-[4/5]", "aspect-square", "aspect-[3/4]", "aspect-[4/5]", "aspect-square", "aspect-[4/3]", "aspect-square"];
+const spans = ["aspect-[4/5]", "aspect-square", "aspect-[3/4]", "aspect-[4/5]", "aspect-square", "aspect-[4/3]", "aspect-square", "aspect-[3/4]"];
 
 export function Gallery() {
   return (
@@ -63,7 +63,8 @@ export function Gallery() {
                 <div className="plate-zoom">
                   <Plate
                     variant={post.variant}
-                    alt={`${post.caption} — editorial artwork`}
+                    alt={`${post.caption} — photo from Aztheticlyf on Instagram`}
+                    src={post.image}
                     className={`${spans[index % spans.length]} w-full`}
                   />
                 </div>

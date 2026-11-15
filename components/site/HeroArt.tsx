@@ -52,7 +52,8 @@ export function HeroArt() {
         >
           <Plate
             variant="hamper"
-            alt="Editorial artwork of a ribboned gift hamper in lilac and cream"
+            alt="TARA hamper styled with a green saree, jewellery and stationery"
+            src="/images/instagram/tara-hamper.jpg"
             label="01 — Hampers"
             priority
             className="aspect-[4/5] w-full"
@@ -66,7 +67,8 @@ export function HeroArt() {
         >
           <Plate
             variant="stationery"
-            alt="Editorial artwork of stacked notebooks and a pen"
+            alt="Korean stationery and accessories arranged in a gift hamper"
+            src="/images/instagram/stationery-hamper.jpg"
             label="Stationery"
             className="aspect-square w-full"
           />

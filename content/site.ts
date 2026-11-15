@@ -55,6 +55,7 @@ export type Collection = {
   description: string;
   details: string[];
   variant: PlateVariant;
+  image: string;
   /** Shown as a small mono label on the artwork */
   artLabel: string;
   featured?: boolean;
@@ -71,6 +72,7 @@ export const collections: Collection[] = [
       "Birthday, anniversary, wedding and festive hampers assembled by hand — bath and bubbles edits, saree hampers, and the TARA hamper among our recent releases. Tell us who it is for and we will build the rest.",
     details: ["Gifting", "Weddings", "Festive"],
     variant: "hamper",
+    image: "/images/instagram/tara-hamper.jpg",
     artLabel: "Hampers",
     featured: true,
   },
@@ -83,6 +85,7 @@ export const collections: Collection[] = [
       "Notebooks, pens, stickers and desk pieces picked for how they feel in the hand. The category that started the studio, and still the one people come back for.",
     details: ["Retail & wholesale", "New drops regularly", "Great for resellers"],
     variant: "stationery",
+    image: "/images/instagram/stationery-hamper.jpg",
     artLabel: "Stationery",
   },
   {
@@ -94,6 +97,7 @@ export const collections: Collection[] = [
       "Hair accessories, charms and the dainty extras that make a gift feel complete. Chosen to sit beautifully beside the stationery and jewellery.",
     details: ["Everyday wear", "Gift-ready", "Bundled with hampers"],
     variant: "bloom",
+    image: "/images/instagram/gift-set.jpg",
     artLabel: "Accessories",
   },
   {
@@ -105,6 +109,7 @@ export const collections: Collection[] = [
       "Our anti-tarnish edit, also available through our sister label Tara Luxe — pieces designed to stay bright through everyday life.",
     details: ["Anti-tarnish finish", "Everyday pieces", "Retail & bulk"],
     variant: "jewellery",
+    image: "/images/instagram/saree-jewellery.jpg",
     artLabel: "Tarnish-free",
   },
   {
@@ -116,6 +121,7 @@ export const collections: Collection[] = [
       "Return gifts for weddings, baby showers, housewarmings and corporate occasions — curated so every guest receives something they would actually keep.",
     details: ["Bulk friendly", "Custom quantities", "Packaging options"],
     variant: "drape",
+    image: "/images/instagram/gift-card.jpg",
     artLabel: "Return gifts",
   },
 ];
@@ -125,6 +131,7 @@ export type Feature = {
   kicker: string;
   body: string;
   variant: PlateVariant;
+  image: string;
   tag: string;
   /** No prices are published by the brand, so every feature runs through WhatsApp. */
   enquire: string;
@@ -137,6 +144,7 @@ export const features: Feature[] = [
     body:
       "Our latest hamper, launched alongside Tara Luxe. A gift that carries the whole studio in one box — stationery, accessories and anti-tarnish jewellery, wrapped as one.",
     variant: "hamper",
+    image: "/images/instagram/tara-hamper.jpg",
     tag: "Launch",
     enquire: "Hi Aztheticlyf! I'd like to know more about the TARA Hamper — availability, what's inside and pricing.",
   },
@@ -146,6 +154,7 @@ export const features: Feature[] = [
     body:
       "A slow-evening hamper for someone who deserves a pause. Softly scented, generously packed, and finished with a handwritten note if you would like one.",
     variant: "bloom",
+    image: "/images/instagram/bath-bubbles.jpg",
     tag: "Gifting",
     enquire: "Hi Aztheticlyf! I'm interested in the Bath & Bubbles gift hamper. Could you share the details and pricing?",
   },
@@ -155,6 +164,7 @@ export const features: Feature[] = [
     body:
       "Built for the wedding circuit — a hamper that arrives as beautifully as the saree it accompanies. Adjustable to the occasion and the guest list.",
     variant: "drape",
+    image: "/images/instagram/saree-jewellery.jpg",
     tag: "Weddings",
     enquire: "Hi Aztheticlyf! I'd like details on the Saree Hamper for an upcoming wedding. Could you help me plan quantities?",
   },
@@ -188,13 +198,14 @@ export const differentiators = [
 ];
 
 export const gallery = [
-  { caption: "Launching the TARA hamper", variant: "hamper" as PlateVariant, tag: "Hampers", href: "https://www.instagram.com/p/DfoVQm0GsR5/" },
-  { caption: "Bath & bubbles, packed", variant: "bloom" as PlateVariant, tag: "Hampers", href: "https://www.instagram.com/p/DfZI2KRhV_K" },
-  { caption: "Anti-tarnish, every day", variant: "jewellery" as PlateVariant, tag: "Jewellery", href: "https://www.instagram.com/aztheticlyf/" },
-  { caption: "Saree hamper season", variant: "drape" as PlateVariant, tag: "Weddings", href: "https://www.instagram.com/aztheticlyf/" },
-  { caption: "Korean stationery drop", variant: "stationery" as PlateVariant, tag: "Stationery", href: "https://www.instagram.com/aztheticlyf/" },
-  { caption: "Return gift edits", variant: "note" as PlateVariant, tag: "Return gifts", href: "https://www.instagram.com/aztheticlyf/" },
-  { caption: "Ribbon, wrap, seal", variant: "ribbon" as PlateVariant, tag: "Packing", href: "https://www.instagram.com/aztheticlyf/" },
+  { caption: "Launching the TARA hamper", variant: "hamper" as PlateVariant, image: "/images/instagram/tara-hamper.jpg", tag: "Hampers", href: "https://www.instagram.com/p/DfoVQm0GsR5/" },
+  { caption: "Korean stationery gift hamper", variant: "stationery" as PlateVariant, image: "/images/instagram/stationery-hamper.jpg", tag: "Stationery", href: "https://www.instagram.com/p/DftTRA1mlpr/" },
+  { caption: "TARA saree and jewellery set", variant: "drape" as PlateVariant, image: "/images/instagram/saree-jewellery.jpg", tag: "Gifting", href: "https://www.instagram.com/p/DfrF_URGvyQ/" },
+  { caption: "Necklace styling reel", variant: "jewellery" as PlateVariant, image: "/images/instagram/jewellery.jpg", tag: "Jewellery", href: "https://www.instagram.com/reel/Dfofw3rO15R/" },
+  { caption: "Body-care gift picks", variant: "bloom" as PlateVariant, image: "/images/instagram/bath-bubbles.jpg", tag: "Body care", href: "https://www.instagram.com/reel/DeWqTT9uCy4/" },
+  { caption: "A gift idea to tag someone", variant: "note" as PlateVariant, image: "/images/instagram/gift-card.jpg", tag: "Gift ideas", href: "https://www.instagram.com/reel/Dfon0XbPqoa/" },
+  { caption: "Saree hamper accessories", variant: "jewellery" as PlateVariant, image: "/images/instagram/gift-set.jpg", tag: "Accessories", href: "https://www.instagram.com/p/Dfomemdmq7w/" },
+  { caption: "TARA hamper details", variant: "hamper" as PlateVariant, image: "/images/instagram/hamper-detail.jpg", tag: "Hampers", href: "https://www.instagram.com/p/DfoVQm0GsR5/" },
 ];
 
 export const wholesaleProcess = [

@@ -23,7 +23,8 @@ function CollectionCard({ collection, index }: { collection: Collection; index: 
         <div className="plate-zoom relative overflow-hidden border border-ink/10 bg-mist/30">
           <Plate
             variant={collection.variant}
-            alt={`${collection.name} — editorial artwork`}
+            alt={`${collection.name} — photo from Aztheticlyf on Instagram`}
+            src={collection.image}
             label={collection.artLabel}
             className={`${ratios[index % ratios.length]} w-full`}
           />
@@ -97,7 +98,8 @@ export function Collections() {
             <div className="plate-zoom relative overflow-hidden border border-ink/10 lg:col-span-7">
               <Plate
                 variant={lead.variant}
-                alt={`${lead.name} — editorial artwork`}
+                alt={`${lead.name} — photo from Aztheticlyf on Instagram`}
+                src={lead.image}
                 label={lead.artLabel}
                 className="aspect-[16/11] w-full"
               />
